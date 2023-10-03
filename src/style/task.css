@@ -1,0 +1,60 @@
+.task-container{
+    min-width: 800px;
+    box-shadow: 5px 5px 6px rgb(99, 99, 99);
+    height: 40px;
+    background-color: #E5A960;
+    margin: 15px auto;
+    display:grid;
+    gap: 0px 5px;
+    grid-template-areas: "a a b b c d E";
+    align-items: center;
+}
+
+.task-title,.task-deadline,.task-status{
+    font-weight: bold;
+    font-size: large;
+}
+
+
+.task-title{
+    padding-left: 2px;
+}
+
+.title{
+    grid-area: a;
+}
+.deadline{
+    grid-area: b;
+    padding-left: 2px;
+}
+
+.values{
+    font-size: large;
+}
+
+.task-cancel-btn,.task-edit-btn,.task-save-btn{
+    background-color: transparent;
+    outline: none;
+    border: transparent;
+    display: grid;
+    place-items: center;
+}
+
+.task-cancel-btn{
+    font-size: x-large;
+}
+
+.task-edit-btn:hover,.task-save-btn:hover,.task-cancel-btn:hover{
+    color: 	white;
+}
+
+.form-input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
+.inactive{
+    display: none;
+}

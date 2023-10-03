@@ -1,0 +1,123 @@
+
+
+
+.hamburger-icon{
+    display: none;
+}
+
+.header-component{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}  
+
+.logo-comp{
+    color:white;
+    height: 100%;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: larger;
+    font-weight: 900;
+}
+
+.nav-links{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.links{
+    width: 30%;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.auth-container{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.auth-btn{
+    width: 70px;
+    height: 25px;
+    outline: none;
+    border-radius: 10px;
+    border: transparent;
+    font-size: small;
+    font-weight: 700;
+    background-color: #FF9900;
+}
+
+@media screen and (min-width:1100px) and (max-width:1299px) {
+    .logo-comp{
+        width: 80%;
+    }
+    .nav-links{
+        width: 20%;
+    }
+    
+}
+
+@media screen and (min-width:1300px) {
+    .auth-container{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .hamburger-icon{
+        position: absolute;
+        display: block;
+        top:10px;
+        right:5px;
+        width: 40px;
+        height: 30px;
+    }
+    .hamburger-icon-btn{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        display: grid;
+        place-items: center;
+        padding: 0px;
+    }
+    .nav-links{
+        position: absolute;
+        background-color: #282c34;
+        display: none;
+        flex-direction: column;
+        top: 50px;
+        right: 0px;
+        height: 150px;
+        width: 150px;
+        z-index: 9999;
+        border: 10px double white;
+        border-bottom-left-radius: 20px;
+        transform: translateX(50vw);
+    }
+    .links{
+        width: 100%;
+    }
+    .auth-container{
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.visible{
+    display: flex;
+    transform: translateX(0vw);
+}
+
+.inactive{
+    display: none;
+}
